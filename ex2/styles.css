@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;  /* Everything flushed to the right */
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;    /* the cursor will be a hand on the logo */
+    margin-right: auto;  /* Make the logo flush to the left */
+}
+
+img.logo {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block; /* Make the items go left from rigth instead of stacking veritcally */
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #4bd8eb;
+}
+
+button {
+    padding: 9px 25px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: none; /* Otherwise there will be a border line when clicked */
+}
